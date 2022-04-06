@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace XEntity
@@ -10,6 +11,16 @@ namespace XEntity
         public virtual void OnInteract(Interactor interactor)
         {
             Debug.Log("Interacting...");
+        }
+
+        internal void OnDefocused()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void OnFocused(Transform transform)
+        {
+            throw new NotImplementedException();
         }
     }
 }
