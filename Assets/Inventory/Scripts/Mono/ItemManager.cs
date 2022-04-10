@@ -113,5 +113,9 @@ namespace XEntity
             for (int i = 0; i < itemList.Count; i++) if (itemList[i] == item) return i;
             return -1;
         }
+        void SellAll(ItemSlot slot)
+        {
+            slot.Remove(1);
+        }
     } 
 }
