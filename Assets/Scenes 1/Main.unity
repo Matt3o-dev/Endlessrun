@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3082bfa76c4c14ea141eb4fbcdcd28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 71726096}
+  maxVite: 1
 --- !u!114 &71726098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,6 +967,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2069519664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069519661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3082bfa76c4c14ea141eb4fbcdcd28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 2101788043}
+  maxVite: 2
 --- !u!1 &2084228099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,3 +1167,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3082bfa76c4c14ea141eb4fbcdcd28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 2101788043}
+  maxVite: 1

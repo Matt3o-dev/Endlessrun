@@ -38,6 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\MovementPlayer2.cs" />
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\SwipeControls.cs" />
      <Compile Include="Assets\Scripts\LevelGenerator.cs" />
@@ -45,7 +46,6 @@
      <Compile Include="Assets\Scripts\Collision.cs" />
      <Compile Include="Assets\Scripts\BendControllerRadial.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <None Include="Assets\Shaders\BendyWaterCartesian.shader" />
      <None Include="Assets\Shaders\BendyWaterRadial.shader" />
      <None Include="Assets\Shaders\BendyDiffuseCartesian.shader" />
