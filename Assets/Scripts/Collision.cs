@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Collision : MonoBehaviour
+public class Collision :
+ MonoBehaviour
 {
     int deadplayer = 1;
+    private Animator animator;
     public GameObject Player;
     public int maxVite = 2;
     private void OnTriggerEnter(Collider other)
@@ -15,9 +17,15 @@ public class Collision : MonoBehaviour
             deadplayer++;
             if (deadplayer > maxVite)
             {
-                Destroy(Player);
+                LevelGenerator.speed = 0;
+                animator.SetBool("deadAnimation", true);
             }
             
         }
+    }
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+        animator.SetBool("deadAnimation", false);
     }
 }

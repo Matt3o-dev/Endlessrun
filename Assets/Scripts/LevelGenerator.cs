@@ -7,8 +7,9 @@ public class LevelGenerator : MonoBehaviour
     public GameObject Tile1;
     public GameObject Tile2;
     public GameObject StartTile;
+    public static float speed = 4;
 
-    private float Index = 0;
+    public float Index = 0;
 
     private void Start()
     {
@@ -26,7 +27,7 @@ public class LevelGenerator : MonoBehaviour
 
     private void Update()
     {
-        gameObject.transform.position += new Vector3(4 * Time.deltaTime, 0, 0);
+        gameObject.transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
 
         if(transform.position.x >= Index)
         {
