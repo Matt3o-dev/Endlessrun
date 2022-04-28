@@ -50,6 +50,7 @@
      <None Include="Assets\Shaders\BendyWaterRadial.shader" />
      <None Include="Assets\Shaders\BendyDiffuseCartesian.shader" />
      <None Include="Assets\Shaders\BendyDiffuseRadial.shader" />
+     <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
