@@ -36,44 +36,44 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_AIStats.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_SurfaceRotation.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\AIStats.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
+     <Compile Include="Assets\polyperfect\Common\RandomCharacterPlacer.cs" />
+     <Compile Include="Assets\polyperfect\Common\Common_AnimationControl.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\AnimalWanderManager.cs" />
      <Compile Include="Assets\Scripts\MovementPlayer2.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_WanderManager.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\Scripts\SwipeControls.cs" />
-     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
-     <Compile Include="Assets\Scripts\BendControllerCartesian.cs" />
-     <Compile Include="Assets\Scripts\Collision.cs" />
-     <Compile Include="Assets\Scripts\BendControllerRadial.cs" />
-     <Compile Include="Assets\Scripts\Coin.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\ToggleEvent.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_WanderManager.cs" />
-     <Compile Include="Assets\polyperfect\Common\Common_PlaySound.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\AIState.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\AnimalWanderManager.cs" />
-     <Compile Include="Assets\polyperfect\Common\Common_AnimSpeed.cs" />
-     <Compile Include="Assets\polyperfect\Common\RandomCharacterPlacer.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_SurfaceRotation.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_AIStats.cs" />
-     <Compile Include="Assets\polyperfect\Common\Common_RandomInt.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\AnimalAudioManager.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_WanderScript.cs" />
-     <Compile Include="Assets\polyperfect\Common\Common_KillSwitch.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_SurfaceRotation.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\MovementState.cs" />
-     <Compile Include="Assets\polyperfect\Common\Common_AnimationControl.cs" />
-     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\SceneAnimatorController.cs" />
      <Compile Include="Assets\polyperfect\Common\Wander Script\IdleState.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_AudioManager.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\AnimalAudioManager.cs" />
+     <Compile Include="Assets\polyperfect\Common\Common_KillSwitch.cs" />
+     <Compile Include="Assets\Scripts\LevelGenerator.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\MovementState.cs" />
      <Compile Include="Assets\polyperfect\Common\Wander Script\Common_WanderScript.cs" />
-     <Compile Include="Assets\polyperfect\Common\Wander Script\AIStats.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_SurfaceRotation.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\Common_AudioManager.cs" />
+     <Compile Include="Assets\Scripts\BendControllerCartesian.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\ToggleEvent.cs" />
+     <Compile Include="Assets\Scripts\Collision.cs" />
+     <Compile Include="Assets\polyperfect\Common\Common_AnimSpeed.cs" />
      <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\AnimalPlaySound.cs" />
+     <Compile Include="Assets\polyperfect\Common\Common_RandomInt.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\SceneAnimatorController.cs" />
+     <Compile Include="Assets\Scripts\BendControllerRadial.cs" />
+     <Compile Include="Assets\polyperfect\Common\Wander Script\AIState.cs" />
+     <Compile Include="Assets\polyperfect\Low Poly Animated Animals\- Scripts\Wander Script\Animal_WanderScript.cs" />
+     <Compile Include="Assets\Scripts\Coin.cs" />
+     <Compile Include="Assets\polyperfect\Common\Common_PlaySound.cs" />
+     <Compile Include="Assets\Scripts\DogAnimation.cs" />
      <None Include="Assets\Shaders\BendyWaterCartesian.shader" />
      <None Include="Assets\Shaders\BendyWaterRadial.shader" />
      <None Include="Assets\__www.unityassetcollection.com__.txt" />
      <None Include="Assets\Shaders\BendyDiffuseCartesian.shader" />
      <None Include="Assets\Shaders\BendyDiffuseRadial.shader" />
-     <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <Reference Include="UnityEngine">
         <HintPath>D:\2020.3.32f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -697,6 +697,18 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
         <HintPath>C:\Users\Win10\Dropbox\PC\Documents\GitHub\EndlessConcorso\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx">
+        <HintPath>C:\Users\Win10\Dropbox\PC\Documents\GitHub\EndlessConcorso\Library\ScriptAssemblies\Autodesk.Fbx.dll</HintPath>
+    </Reference>
+    <Reference Include="Autodesk.Fbx.Editor">
+        <HintPath>C:\Users\Win10\Dropbox\PC\Documents\GitHub\EndlessConcorso\Library\ScriptAssemblies\Autodesk.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Editor">
+        <HintPath>C:\Users\Win10\Dropbox\PC\Documents\GitHub\EndlessConcorso\Library\ScriptAssemblies\Unity.Formats.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Formats.Fbx.Runtime">
+        <HintPath>C:\Users\Win10\Dropbox\PC\Documents\GitHub\EndlessConcorso\Library\ScriptAssemblies\Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
