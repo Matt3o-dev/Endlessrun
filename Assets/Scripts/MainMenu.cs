@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public string option;
     public GameObject pausa;
     public string information;
+    public string MainM;
     public void startButton()
     {
         Time.timeScale = 1;
@@ -21,8 +22,7 @@ public class MainMenu : MonoBehaviour
     }
     public void exitButton()
     {
-        Application.Quit();
-        Debug.Log("Quit");
+        SceneManager.LoadScene(MainM);
     }
     void Update()
     {

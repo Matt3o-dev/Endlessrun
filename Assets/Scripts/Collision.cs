@@ -21,9 +21,9 @@ public class Collision :
                 LevelGenerator.speed = 0;
                 animator.SetBool("deadAnimation", true);
             }
-            
         }
     }
+
     public void Start()
     {
         animator = GetComponent<Animator>();
