@@ -62,6 +62,10 @@
                 Lane1 = false;
                 Lane3 = false;
             }
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Time.timeScale = 0;
+            }
             #endregion
         }
     }

@@ -14,12 +14,13 @@ public class Coin : MonoBehaviour
 
     private void Update()
     {
-        gameObject.transform.Rotate(0, 0, 0.5f);
+        gameObject.transform.Rotate(0.5f, 1, 0.3f);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         ScoreText.ScorePlusOne();
         Destroy(gameObject);
+        Health.health = Health.health +10;
     }
 }
