@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject pausa;
     public string information;
     public string MainM;
+    public static bool animationStart;
     public void startButton()
     {
         Time.timeScale = 1;
@@ -31,6 +32,11 @@ public class MainMenu : MonoBehaviour
             pausa.SetActive(true);
             Time.timeScale = 0;
         }
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            pausa.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
     void Start()
     {
@@ -39,6 +45,7 @@ public class MainMenu : MonoBehaviour
     void startAgain()
     {
         SceneManager.LoadScene(firstLevel);
+        animationStart = false;
     }
     void informationButton()
     {

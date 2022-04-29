@@ -11,6 +11,8 @@ public class Collision :
     public GameObject Player;
     bool idle = false;
     public int maxVite = 2;
+    public GameObject Gameover;
+    public GameObject Game;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Obstacle")
@@ -20,6 +22,7 @@ public class Collision :
             {
                 LevelGenerator.speed = 0;
                 animator.SetBool("deadAnimation", true);
+                Invoke ("GameOver", 3);
             }
         }
     }
@@ -29,6 +32,11 @@ public class Collision :
         animator = GetComponent<Animator>();
         animator.SetBool("deadAnimation", false);
         animator.SetBool("Idle", false);
+        if (MainMenu.animationStart)
+        {
+            animator.SetBool("deadAnimation", false);
+            animator.SetBool("Idle", false);
+        }
     }
     void Update() 
     {
@@ -37,5 +45,10 @@ public class Collision :
         {
             animator.SetBool("Idle", true);
         }
+    }
+    void GameOver()
+    {
+        Gameover.SetActive(true);
+        Game.SetActive(false);
     }
 }
