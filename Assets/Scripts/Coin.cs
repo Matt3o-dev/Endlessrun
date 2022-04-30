@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Coin : MonoBehaviour
 {
-    private Score ScoreText;
+    private Collider ScoreText;
 
     private void Start()
     {
-        ScoreText = GameObject.FindGameObjectWithTag("ScoreText").GetComponent<Score>();
+        
     }
 
     private void Update()
@@ -19,7 +19,6 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        ScoreText.ScorePlusOne();
         Destroy(gameObject);
         Health.health = Health.health +10;
     }

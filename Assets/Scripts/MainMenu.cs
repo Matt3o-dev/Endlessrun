@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string firstLevel;
-    public string option;
     public GameObject pausa;
     public string information;
     public string MainM;
@@ -23,7 +22,7 @@ public class MainMenu : MonoBehaviour
     }
     public void optionButton()
     {
-        SceneManager.LoadScene(option);
+        SceneManager.LoadScene("information");
     }
     public void exitButton()
     {
@@ -49,6 +48,10 @@ public class MainMenu : MonoBehaviour
     public void MainMenuButtom()
     {
         SceneManager.LoadScene("SelectLevel");
+    }
+    public void MainMenu2()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
 

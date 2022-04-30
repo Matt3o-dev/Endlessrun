@@ -24,6 +24,7 @@ public class LevelGenerator : MonoBehaviour
         StartPlane4.transform.position = new Vector3(-17, 0, 0);
         GameObject StartPlane5 = Instantiate(StartTile, transform);
         StartPlane5.transform.position = new Vector3(-25, 0, 0);
+        Time.timeScale = 1;
     }
 
     private void Update()

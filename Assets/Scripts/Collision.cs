@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Collision : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class Collision : MonoBehaviour
     public GameObject Gameover;
     public GameObject Game;
     public static bool gameOverBool;
+    private int ScoreInt = -1;
+    public Text ScoreText;
 
     private void OnTriggerEnter(Collider other)
     {
+        ScoreInt++;
         if(other.tag == "Obstacle")
         {
             deadplayer++;
@@ -60,6 +64,7 @@ public class Collision : MonoBehaviour
             LevelGenerator.speed = LevelGenerator.maxSpeed;
             Time.timeScale = 1;
         }
+        ScoreText.text = ScoreInt.ToString();
     }
     void GameOver()
     {
