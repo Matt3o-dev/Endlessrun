@@ -522,11 +522,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cedf948605d54489eced769a324279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: Main
+  firstLevel: SelectLevel
   option: Option
   pausa: {fileID: 1521624718}
   information: Information
-  MainM: 
+  MainM: MainMenu
 --- !u!4 &511702024
 Transform:
   m_ObjectHideFlags: 0

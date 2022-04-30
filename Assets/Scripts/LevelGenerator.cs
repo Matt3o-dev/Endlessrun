@@ -8,6 +8,7 @@ public class LevelGenerator : MonoBehaviour
     public GameObject Tile2;
     public GameObject StartTile;
     public static float speed = 4;
+    public static int maxSpeed;
 
     public float Index = 0;
 

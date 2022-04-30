@@ -13,9 +13,13 @@ public class MainMenu : MonoBehaviour
     public static bool animationStart;
     public void startButton()
     {
-        Time.timeScale = 1;
         pausa.SetActive(false);
         SceneManager.LoadScene(firstLevel);
+        LevelGenerator.speed = LevelGenerator.maxSpeed;
+        if (Collision.gameOverBool)
+        {
+            animationStart = true;
+        }
     }
     public void optionButton()
     {
@@ -42,14 +46,9 @@ public class MainMenu : MonoBehaviour
     {
         pausa.SetActive(false);
     }
-    void startAgain()
+    public void MainMenuButtom()
     {
-        SceneManager.LoadScene(firstLevel);
-        animationStart = false;
-    }
-    void informationButton()
-    {
-        SceneManager.LoadScene(information);
+        SceneManager.LoadScene("SelectLevel");
     }
 }
 
